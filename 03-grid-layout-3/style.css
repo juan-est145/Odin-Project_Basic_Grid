@@ -43,6 +43,7 @@
 .sidebar {
   background-color: #C50208;
   grid-column: 1;
+  grid-row: 2/4;
 }
 
 .sidebar .photo {
@@ -59,10 +60,20 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+  grid-column: 1;
+  grid-row: 2/4;
 }
 
 .nav {
   background-color: #C50208;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.nav ul
+{
+  display: grid;
+  grid-auto-flow: column;
 }
 
 .nav ul li {
@@ -72,6 +83,7 @@
 
 .article {
   background-color: #bccbde;
+  grid-column: 2;
 }
 
 .article p {
@@ -101,6 +113,7 @@
 .footer {
   background-color: #393f4d;
   grid-column: 1/-1;
+  grid-row: 4;
 }
 
 .footer p {
